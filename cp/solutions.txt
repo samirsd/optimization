@@ -1,0 +1,89 @@
+Team: Waldemar Cruz, Samir Dahmani
+
+Quasigroup table for sizes of n up to 11 (or prove that none exist).
+
+--- 1 x 1 Matrix ---
+
+0
+
+--- 2 x 2 Matrix ---
+
+=====UNSATISFIABLE=====
+
+--- 3 x 3 Matrix ---
+
+0 2 1 
+2 1 0 
+1 0 2
+
+--- 4 x 4 Matrix ---
+
+=====UNSATISFIABLE=====
+
+--- 5 x 5 Matrix ---
+
+0 4 3 1 2 
+4 1 0 2 3 
+3 0 2 4 1 
+1 2 4 3 0 
+2 3 1 0 4
+
+--- 6 x 6 Matrix ---
+
+=====UNSATISFIABLE=====
+
+--- 7 x 7 Matrix ---
+
+0 2 1 4 3 6 5 
+2 1 0 5 6 3 4 
+1 0 2 6 5 4 3 
+4 5 6 3 0 1 2 
+3 6 5 0 4 2 1 
+6 3 4 1 2 5 0 
+5 4 3 2 1 0 6 
+
+--- 8 x 8 Matrix ---
+
+=====UNSATISFIABLE=====
+ 
+--- 9 x 9 Matrix ---
+
+0 4 6 5 2 1 3 8 7 
+4 1 8 2 7 0 5 3 6 
+6 8 2 7 0 3 4 1 5 
+5 2 7 3 1 8 0 6 4 
+2 7 0 1 4 6 8 5 3 
+1 0 3 8 6 5 7 4 2 
+3 5 4 0 8 7 6 2 1 
+8 3 1 6 5 4 2 7 0 
+7 6 5 4 3 2 1 0 8 
+
+--- 10 x 10 Matrix ---
+
+The solver never came back with a result after 16hrs of 
+running the solver. Therefore, the result of the matrix
+remains unknown. This could be due to our encoding scheme
+for this problem.
+
+--- 11 x 11 Matrix ---
+
+ 0  4  3  5  9  7  2  1  6 10  8 
+ 4  1  0  2  7  6  5  3 10  8  9 
+ 3  0  2  8  1 10  4  6  9  7  5 
+ 5  2  8  3  0  1  9 10  4  6  7 
+ 9  7  1  0  4  2 10  8  3  5  6 
+ 7  6 10  1  2  5  8  9  0  3  4 
+ 2  5  4  9 10  8  6  0  7  1  3 
+ 1  3  6 10  8  9  0  7  5  4  2 
+ 6 10  9  4  3  0  7  5  8  2  1 
+10  8  7  6  5  3  1  4  2  9  0 
+ 8  9  5  7  6  4  3  2  1  0 10
+
+
+Observation:
+Looking at the results from latin square sizes from 1 to 11, there 
+appears to be a tread where any matrix with an even size turns out
+to be infeasible. However, given that our solver did not return a
+result for matrix size 10, we cannot make a conclusion about even
+matrix sizes from 1 to 11.
+
